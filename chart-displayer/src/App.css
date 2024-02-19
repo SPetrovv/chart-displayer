@@ -1,13 +1,22 @@
+/* App.css */
 body {
+  background-color: black;
+  color: white;
   margin: 0;
-  padding: 0;
-  background-color: #000;
-  color: #fff; 
 }
 
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  text-align: center;
+}
+
+.headline {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.chart-container {
+  width: 90%;
+  height: 600px; 
+  margin: auto;
+  text-align: center;
 }

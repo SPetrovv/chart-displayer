@@ -1,3 +1,4 @@
+// TradingViewChart.js
 import React, { useRef, useEffect } from 'react';
 
 const TradingViewChart = () => {
@@ -12,12 +13,12 @@ const TradingViewChart = () => {
       symbols: [
         {
           description: 'BTC/USD',
-          proName: 'COINBASE:BTCUSD',
+          proName: 'BINANCE:BTCUSDT', // Use the correct trading pair for Bitcoin on Binance
         },
       ],
       interval: 'D',
-      width: '100%',
-      height: '600', 
+      width: '80%', // Adjust the width as needed
+      height: '400', // Adjust the height as needed
       locale: 'en',
       theme: 'dark',
     });
@@ -26,7 +27,19 @@ const TradingViewChart = () => {
     containerRef.current.appendChild(script);
   }, []);
 
-  return <div ref={containerRef} style={{ width: '100%', height: '600px' }} />;
+  return (
+    <div
+      ref={containerRef}
+      style={{
+        width: '80%',  // Adjust the width as needed
+        height: '500px', // Adjust the height as needed
+        margin: 'auto', // Center horizontally
+        display: 'center',
+        justifyContent: 'center', // Center vertically
+        alignItems: 'center', // Center vertically
+      }}
+    />
+  );
 };
 
 export default TradingViewChart;
