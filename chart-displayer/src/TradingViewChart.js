@@ -17,8 +17,8 @@ const TradingViewChart = () => {
         },
       ],
       interval: 'D',
-      width: '80%', // Adjust the width as needed
-      height: '400', // Adjust the height as needed
+      width: '100%', // Adjust the width as needed
+      height: '500', // Adjust the height as needed
       locale: 'en',
       theme: 'dark',
     });
@@ -31,12 +31,9 @@ const TradingViewChart = () => {
     <div
       ref={containerRef}
       style={{
-        width: '80%',  // Adjust the width as needed
+        width: '80%', // Adjust the width as needed
         height: '500px', // Adjust the height as needed
         margin: 'auto', // Center horizontally
-        display: 'center',
-        justifyContent: 'center', // Center vertically
-        alignItems: 'center', // Center vertically
       }}
     />
   );
