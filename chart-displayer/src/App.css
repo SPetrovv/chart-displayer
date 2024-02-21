@@ -21,22 +21,43 @@ body {
   margin: auto;
 }
 
-.instructions-window {
+.instructions-button {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  padding: 0px 10px;
+  padding: 5px 10px;
   border-radius: 10px;
   background-color: white;
   color: black;
-  cursor: pointer; /* Add cursor pointer to indicate interactivity */
-  transition: background-color 0.3s; /* Add smooth transition for background color change */
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.instructions-window:hover {
-  background-color: lightgray; /* Change background color on hover */
+.instructions-button:hover {
+  background-color: lightgray;
 }
 
-.instructions-window:active {
-  background-color: gray; /* Change background color on click */
+.instructions-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  width: 300px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
